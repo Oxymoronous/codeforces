@@ -48,7 +48,7 @@ void solve(){
             dp[i+1][mask2|mask] = min(dp[i+1][mask2|mask],dp[i][mask2]+price);
         }
     }
-    ans = f[n][7];
+    ll ans = dp[n][7];
     if(ans == inf) ans = -1;
     cout << ans << endl;
 }
